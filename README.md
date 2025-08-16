@@ -98,10 +98,10 @@ This will:
 
 ## Example
 
-**Input Image:**
+**Input Image:**<br>
 <img src="assets/demo_og.png" width="512"/>
 
-**Converted Output (Game Boy Camera Style):**
+**Converted Output (Game Boy Camera Style):**<br>
 <img src="assets/demo_gb.png" width="512"/>
 
 ## License
