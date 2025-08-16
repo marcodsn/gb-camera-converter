@@ -4,8 +4,6 @@ This Python script converts regular images into **Game Boy Camera–style pictur
 
 It supports both **single image conversion** and **batch folder processing**, with optional retro color palettes and dithering effects.
 
-***
-
 ## Features
 - Hardware‑accurate Game Boy Camera resolution (128×112 pixels)
 - Preset and custom color palettes (grayscale, green, berry, frost, etc.)
@@ -15,8 +13,6 @@ It supports both **single image conversion** and **batch folder processing**, wi
 - Upscales output ×4 for easier sharing
 - Batch folder conversion
 
-***
-
 ## Installation
 
 1. Clone or download the script.
@@ -25,8 +21,6 @@ It supports both **single image conversion** and **batch folder processing**, wi
 ```bash
 pip install pillow numpy
 ```
-
-***
 
 ## Usage
 
@@ -59,8 +53,6 @@ python gb_camera_converter.py cat.png -o cat_gb.png --dither-intensity 1.5 --pal
 python gb_camera_converter.py mug.jpeg -o mug_gb.png --palette "#210002" "#64000b" "#b51d2a" "#ffd8d6"
 ```
 
-***
-
 ### Batch Conversion
 
 Use the **`convert_folder_to_gb_camera`** function to process an entire folder:
@@ -86,8 +78,6 @@ This will:
 - Save results into `output_images/`
 - Assign a **random palette** (if `use_random_palette=True`)
 
-***
-
 ## Available Preset Palettes
 
 - **grayscale** → `#000000 #555555 #AAAAAA #FFFFFF`
@@ -96,33 +86,23 @@ This will:
 - **frost** → Cool blue tone
 - **crimson**, **vaporwave**, **sunset**, **midnight**, **desert**, **toxic**
 
-***
-
 ## Output Details
 - Internal resolution: **128×112** or **112×128** (depending on orientation)
 - Final saved resolution: ×4 upscale (e.g., `512×448`) using **nearest-neighbor scaling**
 - Saved format: **PNG**
-
-***
 
 ## Notes
 - For best results, images with simple shapes and high contrast work best.
 - Dithering intensity lets you adjust pixel "graininess". Too high may cause banding.
 - If you want a pure 4‑shade look (no dithering), use `--dither-intensity 0`.
 
-***
-
 ## Example
 
 **Input Image:**
-![Mikusaurus](assets/demo_og.png)
+<img src="assets/demo_og.png" width="512"/>
 
 **Converted Output (Game Boy Camera Style):**
-![Mikusaurus GB Converted](assets/demo_gb.png)
-
-***
+<img src="assets/demo_gb.png" width="512"/>
 
 ## License
 MIT License – free to use, modify, and share.
-
-***
